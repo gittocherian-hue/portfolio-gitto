@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gitto Cherian | Future IT Professional</title>
+    <meta name="description"
+        content="Professional portfolio of Gitto Cherian, an MCA student and future IT professional.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#strengths">Strengths</a></li>
+                    <li><a href="#weaknesses">Weaknesses</a></li>
+                    <li><a href="#career-values">Values</a></li>
+                    <li><a href="#personality">Personality</a></li>
+                    <li><a href="#improvement">Goals</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container header-content">
+            <h1>Gitto Cherian</h1>
+            <p class="subtitle">Future IT Professional</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="card">
+                    <p>I am currently pursuing my Master of Computer Applications (MCA) with a deep interest in software
+                        development and web technologies. I aim to become a successful IT professional and aspire to
+                        start my own IT business in the future, contributing innovatively to the industry.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="strengths" class="section">
+            <div class="container">
+                <h2>Strengths</h2>
+                <div class="card">
+                    <ul>
+                        <li><strong>Problem-solving skills:</strong> Ability to analyze complex issues and find
+                            efficient solutions.</li>
+                        <li><strong>Quick learner:</strong> Rapidly adapting to new technologies and methodologies.</li>
+                        <li><strong>Hardworking & Dedicated:</strong> Committed to achieving excellence in every task.
+                        </li>
+                        <li><strong>Technical Curiosity:</strong> Always eager to explore latest advancements in the IT
+                            sector.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="weaknesses" class="section">
+            <div class="container">
+                <h2>Weaknesses</h2>
+                <div class="card">
+                    <p>While I strive for perfection, I sometimes find myself <strong>overthinking</strong> certain
+                        situations. Additionally, I experience <strong>nervousness in public speaking</strong>. However,
+                        I am actively working on improving these areas through practice and continuous self-reflection.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="career-values" class="section">
+            <div class="container">
+                <h2>Career Values</h2>
+                <div class="grid">
+                    <a href="#improvement" class="value-item">Growth</a>
+                    <a href="#about" class="value-item">Continuous Learning</a>
+                    <a href="#personality" class="value-item">Teamwork</a>
+                    <a href="#improvement" class="value-item">Ethics</a>
+                    <a href="#improvement" class="value-item">Responsibility</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="personality" class="section">
+            <div class="container">
+                <h2>Personality Reflection</h2>
+                <div class="card">
+                    <p>I identify as an <strong>ambivert</strong>, possessing a balanced nature that allows me to work
+                        effectively both independently and within teams. My approach to challenges is defined by
+                        <strong>logical thinking</strong> and a <strong>goal-oriented</strong> personality, ensuring
+                        focused results.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="improvement" class="section">
+            <div class="container">
+                <h2>Habit to Improve</h2>
+                <div class="card">
+                    <p>Before entering the industry, my primary focus is on <strong>improving communication skills and
+                            confidence</strong>. I believe that clear communication is vital for professional success
+                        and collaborative growth.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Gitto Cherian | Future IT Professional</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+
+</html>
